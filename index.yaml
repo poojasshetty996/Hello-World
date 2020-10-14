@@ -3,7 +3,7 @@ entries:
   gocd:
   - apiVersion: v1
     appVersion: 20.8.0
-    created: "2020-10-14T11:45:52.082104611+05:30"
+    created: "2020-10-14T15:02:04.565386326+05:30"
     deprecated: true
     description: GoCD is an open-source continuous delivery server to model and visualize
       complex workflows with ease.
@@ -28,7 +28,7 @@ entries:
   sample:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-10-14T11:45:52.083994746+05:30"
+    created: "2020-10-14T15:02:04.56780414+05:30"
     description: A Helm chart for Kubernetes
     digest: 910f733e70be3049454c4306e6c6e7c4b8bc6b391486106ef26111857ca73512
     name: sample
@@ -36,4 +36,4 @@ entries:
     urls:
     - sample-0.1.0.tgz
     version: 0.1.0
-generated: "2020-10-14T11:45:52.079208705+05:30"
+generated: "2020-10-14T15:02:04.560575071+05:30"
