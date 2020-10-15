@@ -1,5 +1,6 @@
 #!/bin/bash
 echo "Hello World"
+helm ls -A
 #minikube start
 #lint_template() {
 #  echo "Linting template"
