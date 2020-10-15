@@ -1,7 +1,8 @@
 #!/bin/bash
 echo "Hello World"
+echo "$PWD"
 #helm ls -A
-helm lint /home/ec2-user/pooja/test/
+#helm lint /home/ec2-user/pooja/test/
 #cp -R /home/ec2-user/pooja/test/ Hello-World/.
 #minikube start
 #lint_template() {
