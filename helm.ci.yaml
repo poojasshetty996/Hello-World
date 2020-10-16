@@ -1,6 +1,6 @@
 format_version: 3
 pipelines:
-  helm-package-publish:
+  HELM-CI:
     group: helm
     label_template: ${COUNT}
     lock_behavior: none
