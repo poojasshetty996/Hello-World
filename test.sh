@@ -1,9 +1,9 @@
 #!/bin/bash
 echo "Hello World"
 echo "$PWD"
-cp -R /home/ec2-user/pooja/test/ "$PWD/." 
+#cp -R /home/ec2-user/pooja/test/ "$PWD/." 
 #helm ls -A
-helm lint "$PWD/test/"
+helm lint "/home/ec2-user/gocd-server-agent/homego/test/" --debug
 #cp -R /home/ec2-user/pooja/test/ Hello-World/.
 #minikube start
 #lint_template() {
