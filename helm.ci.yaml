@@ -1,6 +1,6 @@
 format_version: 3
 pipelines:
-  HELM-CI:
+  helm-and-lint:
     group: helm
     label_template: ${COUNT}
     lock_behavior: none
