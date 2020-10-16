@@ -1,0 +1,40 @@
+format_version: 3
+pipelines:
+  helm-package-publish:
+    group: helm
+    label_template: ${COUNT}
+    lock_behavior: none
+    display_order: -1
+    materials:
+        plugin_configuration:
+          id: git-path
+        options:
+          url: https://github.com/poojasshetty996/Hello-World.git
+          path: helm/**/*, helm.ci.yaml
+    stages:
+      - helm-lint:
+          fetch_materials: true
+          keep_artifacts: false
+          clean_workspace: yes
+          approval:
+            type: success
+            allow_only_on_success: false
+          jobs:
+            lint-and-diff:
+              elastic_profile_id: k8s-helm
+              timeout: 0
+              artifacts:
+                - build:
+                    source: k8s-service-*.tgz
+                    destination: helm-packages
+              tasks:
+                - exec:
+                    arguments:
+                      - lint
+                      - helm/k8s-service
+                    command: helm
+                - exec:
+                    arguments:
+                      - package
+                      - helm/k8s-service
+                    command: helm
