@@ -1,6 +1,6 @@
 #!/bin/bash
 #echo "Hello World"
-echo "$HOME"
+helm lint "helm/k8s-service" --debug
 #cp -R /home/ec2-user/pooja/test/ "$PWD/." 
 #helm ls -A
 #helm lint "/home/ec2-user/gocd-server-agent/homego/test/" --debug
