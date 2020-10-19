@@ -1,6 +1,6 @@
 #!/bin/bash
-echo "Hello World"
-#echo "$PWD"
+#echo "Hello World"
+echo "$HOME"
 #cp -R /home/ec2-user/pooja/test/ "$PWD/." 
 #helm ls -A
 #helm lint "/home/ec2-user/gocd-server-agent/homego/test/" --debug
